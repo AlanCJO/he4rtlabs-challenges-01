@@ -1,10 +1,13 @@
+/* ========================================== pre-config */
+
 * {
     margin: 0;
-    padding: 0;
 }
 
 :root {
-    /* font-size: */
+
+    /* Variables of color */
+    --background-gray: #f0f0f0;
 }
 
 html, body {
@@ -12,13 +15,12 @@ html, body {
 }
 
 body {
-    width: 97vw;
-    background: #f0f0f0;
+    background: var(--background-gray);
 
     height: 200vw;
 }
 
-/* nav-bar */
+/* ========================================= nav-bar */
 a.option-navbar {
     text-decoration: none;
     color: black;
@@ -45,7 +47,7 @@ div.container {
     margin: 0 10vw 0 10vw;
 }
 
-div.container .logo {
+.logo {
     width: 3rem;
     height: 3rem;
 
@@ -53,11 +55,58 @@ div.container .logo {
     /* margin-left: 10vw; */
 }
 
+#title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .header {
     width: 100%;;
-    padding: 1.5rem;
+    padding: 25px 0;
 
     background: #DAA520;
 
     position: fixed;
+    top: 0;
+    z-index: 10;
+
+}
+
+/* ========================================= Main */
+#main {
+    padding-top: 120px;
+    margin: 0 60px;
+}
+
+h1.main-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #483D8B;
+    padding: 0 10px
+}
+
+.variables ol li {
+    padding: 40px 5px 40px 5px;
+}
+
+.variables ol li p {
+    margin-top: 8px;
+}
+
+.grid-container div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* display grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 6fr);
+    gap: 1rem;
+
+    background-color: green;
+    border-radius: 1rem;
+    padding: 10px
 }
