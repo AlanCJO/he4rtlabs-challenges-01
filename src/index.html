@@ -70,19 +70,19 @@
                 <div class="grid-container">
                     <div class="input-1">
                         <label for="total-value">Valor Total do Projeto</label>
-                        <input type="number" placeholder="R$ 00,00" autocomplete="off" required id="total-value">
+                        <input onclick="Form.clearError(event)" type="text" placeholder="R$ 00,00" autocomplete="off" id="total-value">
                     </div>
                     <div class="input-2">
                         <label for="worked-hours">Quantidade de Horas Trabalhadas</label>
-                        <input type="number" autocomplete="off" required id="worked-hours">
+                        <input onclick="Form.clearError(event)" type="text" autocomplete="off" autocomplete="off" id="worked-hours">
                     </div>
                     <div class="input-3">
                         <label for="worked-days">Dias Efetivos Trabalhados na Semana</label>
-                    <input type="number" autocomplete="off" required id="worked-days">
+                    <input onclick="Form.clearError(event)" type="text" autocomplete="off" autocomplete="off" id="worked-days">
                     </div>
                     <div class="input-4">
                         <label for="vacation-days">Dias de Férias Pelo Projeto</label>
-                        <input type="number" autocomplete="off" required id="vacation-days">
+                        <input onclick="Form.clearError(event)" type="text" autocomplete="off" autocomplete="off" id="vacation-days">
                     </div>
                 </div>
                 <div id="button-submit">
