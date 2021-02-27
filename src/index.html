@@ -35,7 +35,7 @@
             <h1 class="main-title">He4rtlabs Challenge 01</h1>
         </div>
 
-        <section id="explanations">
+        <section class="section-one" id="explanations">
             <article class="variables">
                <ol>
                    <li id="tempo-investido"> 
@@ -60,7 +60,7 @@
             </article>
         </section>
 
-        <section id="calculator-hour">
+        <section class="section-two" id="calculator-hour">
             <div class="title-calculator">
                 <h2>Calculadora de Valor da Hora </h2>
             </div>
@@ -70,27 +70,37 @@
                 <div class="grid-container">
                     <div class="input-1">
                         <label for="total-value">Valor Total do Projeto</label>
-                        <input type="number" id="total-value" step="0.01">
+                        <input type="number" placeholder="R$ 00,00" autocomplete="off" required id="total-value">
                     </div>
                     <div class="input-2">
                         <label for="worked-hours">Quantidade de Horas Trabalhadas</label>
-                        <input type="number" id="worked-hours">
+                        <input type="number" autocomplete="off" required id="worked-hours">
                     </div>
                     <div class="input-3">
                         <label for="worked-days">Dias Efetivos Trabalhados na Semana</label>
-                    <input type="number" id="worked-days">
+                    <input type="number" autocomplete="off" required id="worked-days">
                     </div>
                     <div class="input-4">
                         <label for="vacation-days">Dias de Férias Pelo Projeto</label>
-                        <input type="number" id="vacation-days">
+                        <input type="number" autocomplete="off" required id="vacation-days">
                     </div>
+                </div>
+                <button class="button">Calcular</button>
+                <div class="result">
+                    <span>Resultado: <span id="value"></span></span>
+                    <textarea style="resize:none" name="result-value" id="result-value" cols="10" rows="2" readonly></textarea>
                 </div>
 
             </form>
 
         </section>
-
     </main>
+
+    <section class="section-three">
+        <footer>
+            <p>Desenvolvido por Alan Oliveira</p>
+        </footer>
+    </section>
 
 </body>
 </html>
