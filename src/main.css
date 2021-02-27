@@ -26,7 +26,7 @@ body {
 a.option-navbar {
     text-decoration: none;
     color: black;
-    font-weight: 500;
+    /* font-weight: 500; */
     font-size: 1.2rem;
 
     padding: 0 10px 0 10px;
@@ -38,7 +38,7 @@ a.option-navbar:hover {
 }
 
 .nav-bar ul li {
-    display: inline-flex;
+    display: inline-block;
 }
 
 div.container {
@@ -50,11 +50,10 @@ div.container {
 }
 
 .logo {
-    width: 3rem;
-    height: 3rem;
-
-    border-radius: 1rem;
-    /* margin-left: 10vw; */
+    width: 15%;
+    height: 5rem;
+    display: flex;
+    box-sizing: border-box;
 }
 
 #title {
@@ -64,7 +63,8 @@ div.container {
 }
 
 .header {
-    width: 100%;;
+    width: 100%;
+    height: 3.5rem;
     padding: 25px 0;
 
     background: #DAA520;
@@ -79,6 +79,10 @@ div.container {
 #main {
     padding-top: 120px;
     margin: 0 60px;
+}
+
+.section-one {
+    margin: 0 150px;
 }
 
 h1.main-title {

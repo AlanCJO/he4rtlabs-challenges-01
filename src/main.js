@@ -7,17 +7,6 @@ const Form = {
     vacationDays: document.getElementById('vacation-days'),
 
     getValues() {
-        // const myObject = {};
-        // let i = 0;
-        // Obj.values().forEach(e => {
-        //     let currentKey = Obj.keys()[i];
-        //     console.log('chave: ' + currentKey);
-        //     console.log('valor: ' + e.value);
-        //     myObject.currentKey = e.value;
-        //     i++
-        // })
-        // console.log(myObject);
-
         return {
             totalValue: parseFloat(Form.totalValue.value),
             hourValue: parseInt(Form.hourValue.value),
@@ -25,18 +14,29 @@ const Form = {
             vacationDays: parseInt(Form.vacationDays.value)
         } 
     },
+
     clearFields() {
         Obj.values().forEach(e => e.value = '');
     },
+
+    submit(event) {
+        event.preventDefault();
+        Calc.init();
+    }
 }
 
 const Obj = {
     values() {
         return Object.values(Form).slice(0, 4);
     },
+
     keys() {
         return Object.keys(Form).slice(0, 4);
     }
+}
+
+const Utils = {
+    
 }
 
 // valorHora = (valorProjeto / (diasEfetivos * 4 * horasDiarias) ) + ( ( diasFerias * diasEfetivos * horasDiarias ) )
